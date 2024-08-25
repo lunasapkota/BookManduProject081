@@ -1,0 +1,203 @@
+
+/* start root css */
+:root{
+    --blue:#123573;
+    --dark-color:#12336d;
+    --black:#444;
+    --light-color:#666;
+    --border:.1rem solid rgba(0,0,0,.1);
+    --border-hover:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+/* end root css */
+
+
+*{
+    font-family: Be vietnam pro;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+}
+
+.drawer:hover+.phoneNav {
+  display: block;
+}
+
+.phoneNav:hover {
+  display: block;
+}
+
+/* start footer section */
+footer{
+  position :relative;
+  background: #12336d;
+  padding-top: 50px;
+  color: white;
+  
+}
+.container-500{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.footer-content{
+  width: 33.3%;
+}
+.head3{
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.footer-content p{
+  width: 190px;
+  margin: auto;
+  padding: 7px;
+}
+.footer-content ul{
+  text-align: center;
+}
+.list30{
+  padding: 0;
+}
+.list30 li{
+  width: auto;
+  text-align: center;
+  list-style-type: none;
+  padding: 7px;
+  position: relative;
+ 
+}
+.list30 li a{
+  color: white;
+}
+.list30 li::before{
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background: #0b48b1;
+  transition-duration: -5s;
+}
+.list30 li:hover::before{
+  width: 70px;
+}
+.social-icons{
+  text-align: center;
+  padding: 0;
+}
+.social-icons li{
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+}
+.social-icons i{
+  color: white;
+  font-size: 25px;
+}
+footer a{
+  text-decoration: none;
+}
+footer a:hover{
+  color: #0b48b1;
+}
+.social-icons i:hover{
+  color: #7086ab;
+}
+.bottom-bar{
+  background: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 50px;
+}
+.bottom-bar p{
+  color: #000000;
+  margin: 0;
+  font-size: 16px;
+  padding: 7px;
+}
+/* end footer section */
+
+ /* Overlay Style */
+ .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.overlay-content {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.overlay h2 {
+  color: #1e3a8a;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.overlay input[type="text"],
+.overlay input[type="email"],
+.overlay input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.overlay button[type="submit"] {
+  background-color: #2563eb;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.overlay button[type="submit"]:hover {
+  background-color: #1e40af;
+}
+
+.overlay p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.overlay p a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.overlay p a:hover {
+  text-decoration: underline;
+}
